@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>珠峰培训</title>
+
+    <link rel="icon" href="">
+    <!--引入外部文件-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!--引入swiper插件自带的css样式表-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--header-->
+<header class="header">
+    <h1 class="logo"><a href="#"></a></h1>
+    <nav class="nav">
+        <span class="icon-menu"></span>
+        <ul class="layout-hover">
+            <li><a href="#">Node课程培训</a></li>
+            <li><a href="#">Node课程培训</a></li>
+            <li><a href="#">Node课程培训</a></li>
+            <li><a href="#">Node课程培训</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#"><img src="images/banner_one.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/banner_tow.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/banner_three.png" alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img src="images/banner_four.png" alt=""></a></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+<!--main-->
+<main>
+    <div class="sec-title">主要课程</div>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+    <section class="sec-col">
+        <a href="">
+            <figure class="pic">
+                <img src="images/banner_one.png" alt="">
+            </figure>
+            <aside class="txt">
+                <p class="info">Vue.js从理论精讲到项目实战课程</p>
+                <p class="price">￥599.00元</p>
+            </aside>
+        </a>
+    </section>
+</main>
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer_logo">
+        <img src="images/home_page.png" alt="">
+        <p>首页</p>
+    </div>
+    <div class="footer_logo">
+        <img src="images/course.png" alt="">
+        <p>我的课程</p>
+    </div>
+    <div class="footer_logo">
+        <img src="images/personal_center.png" alt="">
+        <p>个人中心</p>
+    </div>
+</footer>
+
+<!--swiper-->
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    /*动态计算*/
+    function refreshRem() {
+        var desW = 750,
+            winW = document.documentElement.clientWidth,
+            ratio = winW / desW;
+        document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+
+
+    /*swiper参数配置*/
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true, // 循环模式选项
+        autoplay: {
+            delay: 4000,
+            /*用户自动调整后，恢复自动轮播*/
+            disableOnInteraction: false
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            /*分页样式，自定义*/
+            /*type: 'custom'*/
+            /*默认小圆点*/
+            /*分式*/
+            /*type: 'fraction'*/
+            /*进度条*/
+            /*type: 'progressbar'*/
+        }
+    })
+</script>
+</body>
+</html>
